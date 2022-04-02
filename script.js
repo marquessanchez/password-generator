@@ -5,7 +5,7 @@ var numbers = [ "1","2","3","4","5","6","7","8","9","0"];
 var specials = ["!", "@", "#", "$", "%", "^", "&", "*", "(", ")"];
 
 // function to prompt user for password options
-function getPasswordRequirment (){
+function getPassword (){
 // var passwordLength = prompt('How many characters will you like to use?')  
 var passwordLength = parseInt(prompt('How many characters will you like to use?'));
 if (passwordLength > 128){
@@ -49,7 +49,12 @@ return passwordElement;
 
 // function to generate password for user 
 function generatePassword(){
-
+  var choices = getPassword()
+  
+  return result.join('');
+  }
+  
+  
 
 var generateBtn = document.querySelector("#generate");
 
@@ -64,3 +69,7 @@ passwordText.value = password;
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
+
+// developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/concat
+
+// teamtreehouse.com/community/adding-user-input-to-the-array-in-javascript
