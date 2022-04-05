@@ -49,7 +49,7 @@ return passwordElement;
 
 // function to generate password for user 
 function generatePassword(){
-  var choices = getPassword()
+  var result = userChoices()
   
   return result.join('');
   }
